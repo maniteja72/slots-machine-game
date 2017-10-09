@@ -1,0 +1,130 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.machine-container{
+    max-width: 350px;
+    width: 100%;
+    height: 350px;
+    margin: auto;
+    border: 1px solid #000;
+    margin-top: 30px;
+    border-radius: 5px;
+    background: #DEDEDE;
+}
+.machine-header{
+	margin: 10px 10px;
+    margin-top: 15px;
+	border: 2px solid #000;
+	border-radius: 5px;
+	background: #FFF;
+	padding: 2px;
+}
+#winning-notification{
+	outline: 2px solid #A00;
+	border: 1px solid #000;
+	height: 50px;
+	font-size: 20px;
+	line-height: 50px;
+	text-align: center;
+}
+.machine-slots{
+	border: 2px solid #000;
+	border-radius: 5px;
+	margin: 10px;
+	background-color: #E00;
+	padding:10px;
+}
+.slots-screen{
+	border: 2px solid #CCC;
+	border-radius: 5px;
+	background-color: #FFF;
+	padding: 10px;
+}
+.slot{
+	border: 1px solid #000;
+	border-radius: 5px;
+	width: calc( 33.33% - 10px);
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.slot:first-child, .slot:last-child,{
+	width: calc( 33.33% - 5px);
+}
+#slot1{
+	margin-right: 5px;
+}
+#slot2{
+	margin-right: 5px;
+	margin-left: 5px;
+}
+#slot3{
+	margin-left: 5px;
+}
+.slot img{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	max-width: 100%;
+}
+.hidden-visibilty{
+	visibility: hidden;
+}
+.clearfix{
+	clear: both;
+}
+#spin-button{
+	cursor: pointer;
+}
+.spinner-button{
+	text-align: center;
+}
+.machine-footer{
+	border-radius: 5px;
+	border: 2px solid #000;
+	background-color: #333;
+	color: #FFF;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	margin: 10px;
+}
+.hidden{
+	display: none;
+}
+/** Rotational Button **/
+@-webkit-keyframes spinning {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinning {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.spinning {
+  -webkit-animation: spinning 2s linear infinite;
+  -moz-animation: spinning 2s linear infinite;
+  -ms-animation: spinning 2s linear infinite;
+  -o-animation: spinning 2s linear infinite;
+  animation: spinning 2s linear infinite;
+}

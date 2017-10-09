@@ -1,0 +1,17 @@
+{
+  "name": "slots-machine",
+  "version": "1.0.0",
+  "description": "Slots Machine Game Based on nodejs Server",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha ./unit-test.js"
+  },
+  "author": "Chilla Kartheek Arun sai ram",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "chai": "^4.1.1",
+    "express": "^4.15.4",
+    "mocha": "^3.5.0"
+  }
+}
